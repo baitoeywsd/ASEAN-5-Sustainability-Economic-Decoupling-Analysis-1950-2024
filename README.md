@@ -116,6 +116,8 @@ The core of this analysis is captured in the dynamic movement of ASEAN-5 nations
   <br>
 </p>
 
+<br>
+
 ### 4.2 Country Deep-Dive & Performance Metrics
 We focus on the structural efficiencies of the economies, specifically comparing **Thailand** and **Vietnam** as representatives of different industrial phases:
 
@@ -147,6 +149,8 @@ We focus on the structural efficiencies of the economies, specifically comparing
   <i>Figure 4: YoY Growth Rate Comparison</i>
 </p>
 
+<br>
+
 ### 4.3 Historical Context & World Benchmarking
 To provide global context, regional data is benchmarked against world averages, alongside the **Historical CO<sub>2</sub> Accumulation (Figure 5)** which highlights the total carbon debt each nation has contributed since 1950.
 
@@ -156,6 +160,8 @@ To provide global context, regional data is benchmarked against world averages, 
   <br>
   <i>Figure 5: Historical CO<sub>2</sub> Accumulation (The Carbon Debt) from 1950 to 2024</i>
 </p>
+
+<br>
 
 ---
 
@@ -191,6 +197,7 @@ Based on the 74-year historical analysis of ASEAN-5, several critical patterns e
 ### 7. 🏁 Conclusion
 
 The transition from "Growth at all costs" to "Sustainable Prosperity" is the defining challenge for the ASEAN-5 region. This analysis highlights that while economic decoupling is possible, it requires a deliberate shift in energy efficiency and policy intervention. This project serves as a data-driven framework to monitor that transition through the lens of Environmental Engineering and Data Science.
+
 ---
 
 ### 8. 📚 Data Sources & References
