@@ -205,13 +205,13 @@ Based on the 74-year historical analysis of ASEAN-5, several critical patterns e
 
 ---
 
-### 7. Conclusion
+## 7. Conclusion
 
 The transition from "Growth at all costs" to "Sustainable Prosperity" is the defining challenge for the ASEAN-5 region. This analysis highlights that while economic decoupling is possible, it requires a deliberate shift in energy efficiency and policy intervention. This project serves as a data-driven framework to monitor that transition through the lens of Environmental Engineering and Data Science.
 
 ---
 
-### 8. Data Sources & References
+## 8. Data Sources & References
 
 To ensure data integrity and transparency, this project utilizes high-fidelity datasets from the following sources:
 
