@@ -4,7 +4,20 @@
 
 ---
 
-## 1. 🚀 Project Introduction & Executive Summary
+## 📑 Table of Contents
+
+1. [Project Introduction & Executive Summary](#1-project-introduction--executive-summary)
+2. [Data Architecture & Pipeline](#2-data-architecture--pipeline)
+3. [Advanced Metric Engineering](#3-advanced-metric-engineering)
+4. [Comparative Regional Analysis](#4-comparative-regional-analysis)
+5. [Predictive Insights & Future Projections](#5-predictive-insights--future-projections)
+6. [Analytical Key Insights & Summary](#6-analytical-key-insights--summary)
+7. [Conclusion](#7-conclusion)
+8. [Data Sources & References](#8-data-sources--references)
+
+---
+
+## 1. Project Introduction & Executive Summary
 ### The Sustainability Challenge
 
 Within the context of Emerging Markets, the **ASEAN-5** (Indonesia, Malaysia, Philippines, Thailand, and Vietnam) operate at a critical intersection: **Economic Expansion vs. Environmental Integrity.** This project provides a comprehensive investigation into the historical correlation between GDP growth and carbon emissions over a 74-year period.
@@ -20,7 +33,7 @@ Within the context of Emerging Markets, the **ASEAN-5** (Indonesia, Malaysia, Ph
 
 ---
 
-## 2. 🏗️ Data Architecture & Pipeline (The SQL Power)
+## 2. Data Architecture & Pipeline
 ### Project Structure & Data Flow
 
 To ensure a **"Single Source of Truth,"** the architecture utilizes a systematic pipeline to merge and transform disparate datasets:
@@ -75,7 +88,7 @@ FROM calculated_metrics;
 
 ---
 
-## 3. 📈 Advanced Metric Engineering
+## 3. Advanced Metric Engineering
 The analysis moves beyond raw data by engineering sophisticated sustainability metrics to evaluate economic efficiency:
 * **Carbon Intensity of Economy (CIE):**
 
@@ -103,7 +116,7 @@ The analysis moves beyond raw data by engineering sophisticated sustainability m
 
 ---
 
-## 4. 📊 Comparative Regional Analysis (The "Battle" of Big 5)
+## 4. Comparative Regional Analysis
 
 ### 4.1 The Dynamic Decoupling Heatmap
 The core of this analysis is captured in the dynamic movement of ASEAN-5 nations. The following visualization demonstrates the transition from 1950 to 2024, correlating rising prosperity with individual environmental responsibility:
@@ -163,7 +176,7 @@ To provide global context, regional data is benchmarked against world averages, 
 
 ---
 
-## 5. 🔮 Predictive Insights & Future Projections
+## 5. Predictive Insights & Future Projections
 
 To support long-term sustainability planning, the dashboard incorporates a **Time-Series Forecasting model** (built-in Power BI exponential smoothing) to predict emission trends for the period 2025-2031.
 
@@ -180,7 +193,7 @@ To support long-term sustainability planning, the dashboard incorporates a **Tim
 
 ---
 
-## 6. 🧠 Analytical Key Insights & Summary
+## 6. Analytical Key Insights & Summary
 
 Based on the 74-year historical analysis of ASEAN-5, several critical patterns emerge:
 
@@ -192,13 +205,13 @@ Based on the 74-year historical analysis of ASEAN-5, several critical patterns e
 
 ---
 
-### 7. 🏁 Conclusion
+### 7. Conclusion
 
 The transition from "Growth at all costs" to "Sustainable Prosperity" is the defining challenge for the ASEAN-5 region. This analysis highlights that while economic decoupling is possible, it requires a deliberate shift in energy efficiency and policy intervention. This project serves as a data-driven framework to monitor that transition through the lens of Environmental Engineering and Data Science.
 
 ---
 
-### 8. 📚 Data Sources & References
+### 8. Data Sources & References
 
 To ensure data integrity and transparency, this project utilizes high-fidelity datasets from the following sources:
 
