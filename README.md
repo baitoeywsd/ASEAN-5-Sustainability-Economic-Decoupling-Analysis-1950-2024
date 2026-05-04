@@ -102,54 +102,70 @@ The analysis moves beyond raw data by engineering sophisticated sustainability m
 
 ## 4. 📊 Comparative Regional Analysis (The "Battle" of Big 5)
 
-### **4.1 The Dynamic Decoupling Heatmap (Graph 4)**
+### 4.1 The Dynamic Decoupling Heatmap
 The core of this analysis is captured in the dynamic movement of ASEAN-5 nations. The following visualization demonstrates the transition from 1950 to 2024, correlating rising prosperity with individual environmental responsibility:
 
 <p align="center">
+  <br>
   <img src="dashboard/G4.gif" width="90%" alt="ASEAN-5 Decoupling Animation">
   <br>
-  <i>Figure 1: Dynamic Scatter Chart (Wealth vs. Responsibility) showing GDP per Capita vs. CO<sub>2</sub> per Capita (1950-2024).</i>
+  <i>Figure 1: Dynamic Scatter Chart (Wealth vs. Responsibility) showing GDP per Capita vs. CO<sub>2</sub> per Capita (1950-2024)</i>
+  <br>
 </p>
 
-### **4.2 Country Deep-Dive & Performance Metrics (Graphs 1, 2, & 3)**
+### 4.2 Country Deep-Dive & Performance Metrics
 We focus on the structural efficiencies of the economies, specifically comparing **Thailand** and **Vietnam** as representatives of different industrial phases:
 
-* **Decoupling Status (Graph 1):** Thailand shows signs of "Relative Decoupling" as the economy matures, while Vietnam remains in a steep upward trajectory due to rapid industrialization.
-* **Carbon Intensity Trend (Graph 2):** Measuring the efficiency of wealth generation (CO<sub>2</sub> emitted per $1 GDP).
-* **Economic Growth vs. Emission Rate (Graph 3):** A YoY comparison to verify if economic gains are outpacing pollution growth.
+* **Decoupling Status (Figure 2):** Thailand shows signs of "Relative Decoupling" as the economy matures, while Vietnam remains in a steep upward trajectory due to rapid industrialization.
+* **Carbon Intensity Trend (Figure 3):** Measuring the efficiency of wealth generation (CO<sub>2</sub> emitted per $1 GDP).
+* **Economic Growth vs. Emission Rate (Figure 4):** A YoY comparison to verify if economic gains are outpacing pollution growth.
+
+<br>
 
 <p align="center">
-  <img src="images/decoupling_heatmap_G1.png" width="80%">
+  <img src="Graph1.png" width="75%">
   <br>
-  <i>Figure 2: Comparative Analysis of Emission Trajectories and Decoupling Status.</i>
+  <i>Figure 2: Comparative Analysis of Emission Trajectories and Decoupling Status</i>
 </p>
 
+<br>
+
 <p align="center">
-  <img src="images/carbon_intensity_G2.png" width="45%">
-  <img src="images/growth_comparison_G3.png" width="45%">
+  <img src="Graph2.png" width="80%">
   <br>
-  <i>Figure 3: Left - Carbon Intensity Trend (Efficiency); Right - YoY Growth Rate Comparison.</i>
+  <i>Figure 3: Carbon Intensity Trend (Efficiency)</i>
 </p>
 
-### **4.3 Historical Context & World Benchmarking (Graph 5)**
-To provide global context, regional data is benchmarked against world averages, alongside the **Historical CO<sub>2</sub> Accumulation (Graph 5)** which highlights the total carbon debt each nation has contributed since 1950.
+<br>
+    
+<p align="center">
+  <img src="Graph3.png" width="80%">
+  <br>
+  <i>Figure 4: YoY Growth Rate Comparison</i>
+</p>
+
+### 4.3 Historical Context & World Benchmarking
+To provide global context, regional data is benchmarked against world averages, alongside the **Historical CO<sub>2</sub> Accumulation (Figure 5)** which highlights the total carbon debt each nation has contributed since 1950.
 
 <p align="center">
-  <img src="images/historical_accumulation_G5.png" width="80%">
   <br>
-  <i>Figure 4: Historical CO<sub>2</sub> Accumulation (The Carbon Debt) from 1950 to 2024.</i>
+  <img src="Graph5.png" width="80%">
+  <br>
+  <i>Figure 5: Historical CO<sub>2</sub> Accumulation (The Carbon Debt) from 1950 to 2024</i>
 </p>
 
 ---
 
-## 5. 🔮 Predictive Insights & Future Projections (Graph 6)
+## 5. 🔮 Predictive Insights & Future Projections
 
 To support long-term sustainability planning, the dashboard incorporates a **Time-Series Forecasting model** (built-in Power BI exponential smoothing) to predict emission trends for the period 2025-2031.
 
 <p align="center">
-  <img src="images/co2_forecast_G6.png" width="85%">
   <br>
-  <i>Figure 5: 7-Year CO<sub>2</sub> Emission Projection for ASEAN-5 nations with 95% Confidence Interval.</i>
+  <img src="Graph6.png" width="100%">
+  <br>
+  <i>Figure 6: 7-Year CO<sub>2</sub> Emission Projection for ASEAN-5 nations with 95% Confidence Interval</i>
+  <br>
 </p>
 
 > [!IMPORTANT]
