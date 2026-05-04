@@ -29,25 +29,29 @@ To ensure a **"Single Source of Truth,"** the architecture utilizes a robust SQL
 Behind the visualizations is a robust SQL transformation layer. The following script demonstrates how disparate datasets were unified into a single analytical view:
 ```sql
 /* 
-   Example: Joining GDP and Emission Data 
-   Target: asean_gdp_master_2.csv + co2_emission_1950-2024_3.csv
+   Advanced SQL Transformation Layer
+   Target: Integration of Economic and Emission Datasets (1950-2024)
 */
-SELECT 
-    gdp.Country,
-    gdp.Year,
-    gdp.gdp_per_capita_ppp,
-    co2.total_emissions,
-    -- Calculating Emission per Capita on the fly
-    (co2.total_emissions / gdp.total_population) AS co2_per_capita,
-    -- Identifying Decoupling Status (Logic Layer)
+
+CREATE VIEW v_asean_sustainability_analysis AS
+WITH calculated_metrics AS (
+    SELECT 
+        g.*, c.co2, c.co2_per_capita,
+        -- CIE: Carbon Intensity calculation
+        (c.co2 / NULLIF(g.gdp_ppp_billions, 0)) AS carbon_intensity,
+        -- Window Function for Year-over-Year comparison
+        LAG(c.co2) OVER (PARTITION BY g.Country ORDER BY g.Year) AS prev_year_co2
+    FROM asean_gdp_master g
+    INNER JOIN co2_emission c ON g.Year = c.year AND g.Country = c.country
+)
+SELECT *,
+    -- Decoupling Classification Logic
     CASE 
-        WHEN gdp.gdp_growth > 0 AND co2.emission_growth < 0 THEN 'Absolute Decoupling'
-        WHEN gdp.gdp_growth > co2.emission_growth THEN 'Relative Decoupling'
+        WHEN gdp_growth > 0 AND (co2 - prev_year_co2) < 0 THEN 'Absolute Decoupling'
+        WHEN gdp_growth > 0 AND (co2 - prev_year_co2) < gdp_growth THEN 'Relative Decoupling'
         ELSE 'No Decoupling'
     END AS decoupling_status
-FROM asean_gdp_master_2 gdp
-INNER JOIN co2_emission_1950_2024 co2 
-    ON gdp.Country = co2.Country AND gdp.Year = co2.Year;
+FROM calculated_metrics;
 ```
 
 ### Technical Implementation:
