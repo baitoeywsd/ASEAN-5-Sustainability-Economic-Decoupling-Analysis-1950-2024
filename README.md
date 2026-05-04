@@ -29,7 +29,7 @@ To ensure a **"Single Source of Truth,"** the architecture utilizes a systematic
 
    * `asean_gdp_master.csv`: Historical GDP (PPP) and population data.  
 
-   * `co2_emission_1950_2024.csv`: National CO2 emission records (Source: OWID).  
+   * `co2_emission_1950_2024.csv`: National CO<sub>2</sub> emission records (Source: OWID).  
 
 * **Transformation Layer:**
 
@@ -161,8 +161,6 @@ To provide global context, regional data is benchmarked against world averages, 
   <i>Figure 5: Historical CO<sub>2</sub> Accumulation (The Carbon Debt) from 1950 to 2024</i>
 </p>
 
-<br>
-
 ---
 
 ## 5. 🔮 Predictive Insights & Future Projections
@@ -204,7 +202,8 @@ The transition from "Growth at all costs" to "Sustainable Prosperity" is the def
 
 To ensure data integrity and transparency, this project utilizes high-fidelity datasets from the following sources:
 
-* **International Monetary Fund (IMF):** Used for historical GDP (PPP), population metrics, and future economic growth projections for ASEAN-5 nations. [Source: IMF Data Mapper]
-* **Our World in Data (OWID) via Luca Lullo (Kaggle):** The primary source for CO<sub>2</sub> emission records, provided in the `co2_emission_1950_2024.csv file`.
-* **Methodology:** All data was unified via SQL in `transformation_logic.sql` and exported to `asean_sustainability_transformed.csv` for longitudinal analysis.
+* **International Monetary Fund (IMF):** Historical GDP (PPP), population metrics, and future economic growth projections for ASEAN-5 nations.
+* **Our World in Data (OWID) via Luca Lullo (Kaggle):** The primary source for CO<sub>2</sub> emission records (1950-2024), provided in the `co2_emission_1950_2024.csv file`.
+* **Analytical Framework (OECD)**: The "Decoupling" definitions (Absolute vs. Relative) and Carbon Intensity metrics are based on the **OECD Environmental Indicators** and **UNEP** framework for sustainable growth.
+* **Methodology:** All data was unified via SQL in `transformation_logic.sql` and exported to `asean_sustainability_transformed.csv` for longitudinal analysis. Time-series forecasting (2025-2031) utilizes **ETS (Exponential Smoothing)** models.
 
