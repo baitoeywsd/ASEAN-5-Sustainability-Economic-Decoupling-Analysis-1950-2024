@@ -1,5 +1,8 @@
 # ASEAN-5 Sustainability & Economic Decoupling Analysis (1950-2024)
 
+***A data-driven investigation into the decoupling of GDP growth and carbon emissions across ASEAN-5 economies. Leveraging 74 years of historical data to evaluate sustainability pathways and future regional trajectories.***
+
+---
 
 ## 1. 🚀 Project Introduction & Executive Summary
 ### The Sustainability Challenge
@@ -70,7 +73,7 @@ FROM calculated_metrics;
 * **The Master Join:** Execution of an INNER JOIN on Year and Country keys to eliminate data silos.
 * **Advanced Analytics:** Deployment of SQL Window Functions to calculate **Year-over-Year (YoY) Growth** and rolling averages at the database level.
 
-  ---
+---
 
 ## 3. 📈 Advanced Metric Engineering
 The analysis moves beyond raw data by engineering sophisticated sustainability metrics to evaluate economic efficiency:
@@ -107,7 +110,7 @@ The core of this analysis is captured in the dynamic movement of ASEAN-5 nations
 
 <p align="center">
   <br>
-  <img src="dashboard/G4.gif" width="90%" alt="ASEAN-5 Decoupling Animation">
+  <img src="Graph4.gif" width="85%" alt="ASEAN-5 Decoupling Animation">
   <br>
   <i>Figure 1: Dynamic Scatter Chart (Wealth vs. Responsibility) showing GDP per Capita vs. CO<sub>2</sub> per Capita (1950-2024)</i>
   <br>
@@ -185,16 +188,16 @@ Based on the 74-year historical analysis of ASEAN-5, several critical patterns e
 
 ---
 
-### 7. 📚 Data Sources & References
+### 7. 🏁 Conclusion
+
+The transition from "Growth at all costs" to "Sustainable Prosperity" is the defining challenge for the ASEAN-5 region. This analysis highlights that while economic decoupling is possible, it requires a deliberate shift in energy efficiency and policy intervention. This project serves as a data-driven framework to monitor that transition through the lens of Environmental Engineering and Data Science.
+---
+
+### 8. 📚 Data Sources & References
 
 To ensure data integrity and transparency, this project utilizes high-fidelity datasets from the following sources:
 
 * **International Monetary Fund (IMF):** Used for historical GDP (PPP), population metrics, and future economic growth projections for ASEAN-5 nations. [Source: IMF Data Mapper]
-* **Our World in Data (OWID) via Luca Lullo (Kaggle):** The primary source for CO2 emission records, provided in the `co2_emission_1950_2024.csv file`.
+* **Our World in Data (OWID) via Luca Lullo (Kaggle):** The primary source for CO<sub>2</sub> emission records, provided in the `co2_emission_1950_2024.csv file`.
 * **Methodology:** All data was unified via SQL in `transformation_logic.sql` and exported to `asean_sustainability_transformed.csv` for longitudinal analysis.
 
----
-
-### 8. 🏁 Conclusion
-
-The transition from "Growth at all costs" to "Sustainable Prosperity" is the defining challenge for the ASEAN-5 region. This analysis highlights that while economic decoupling is possible, it requires a deliberate shift in energy efficiency and policy intervention. This project serves as a data-driven framework to monitor that transition through the lens of Environmental Engineering and Data Science.
