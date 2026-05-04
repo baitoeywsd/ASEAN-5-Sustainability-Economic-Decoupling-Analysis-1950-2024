@@ -123,7 +123,7 @@ We focus on the structural efficiencies of the economies, specifically comparing
 <br>
 
 <p align="center">
-  <img src="Graph1.png" width="75%">
+  <img src="Graph1.png" width="85%">
   <br>
   <i>Figure 2: Comparative Analysis of Emission Trajectories and Decoupling Status</i>
 </p>
@@ -131,7 +131,7 @@ We focus on the structural efficiencies of the economies, specifically comparing
 <br>
 
 <p align="center">
-  <img src="Graph2.png" width="80%">
+  <img src="Graph2.png" width="85%">
   <br>
   <i>Figure 3: Carbon Intensity Trend (Efficiency)</i>
 </p>
@@ -139,7 +139,7 @@ We focus on the structural efficiencies of the economies, specifically comparing
 <br>
     
 <p align="center">
-  <img src="Graph3.png" width="80%">
+  <img src="Graph3.png" width="85%">
   <br>
   <i>Figure 4: YoY Growth Rate Comparison</i>
 </p>
@@ -149,7 +149,7 @@ To provide global context, regional data is benchmarked against world averages, 
 
 <p align="center">
   <br>
-  <img src="Graph5.png" width="80%">
+  <img src="Graph5.png" width="85%">
   <br>
   <i>Figure 5: Historical CO<sub>2</sub> Accumulation (The Carbon Debt) from 1950 to 2024</i>
 </p>
