@@ -18,12 +18,23 @@ Within the context of Emerging Markets, the **ASEAN-5** (Indonesia, Malaysia, Ph
 ---
 
 ## 2. 🏗️ Data Architecture & Pipeline (The SQL Power)
-### Systematic Integration
-To ensure a **"Single Source of Truth,"** the architecture utilizes a robust SQL pipeline to merge and transform disparate datasets:
+### Project Structure & Data Flow
 
-1. `asean_gdp_master_2.csv`: Historical GDP (PPP) and population data.
+To ensure a **"Single Source of Truth,"** the architecture utilizes a systematic pipeline to merge and transform disparate datasets:
 
-2. `co2_emission_1950-2024_3.csv`: National CO<sub>2</sub> emission records.
+* **Raw Data (Inputs):**
+
+   * `asean_gdp_master.csv`: Historical GDP (PPP) and population data.  
+
+   * `co2_emission_1950_2024.csv`: National CO2 emission records (Source: OWID).  
+
+* **Transformation Layer:**
+
+   * `transformation_logic.sql`: The "Engine" of this project. It contains the full SQL pipeline (CTE, Window Functions) for data cleaning, joining, and advanced metric engineering.  
+
+* **Final Output:**
+
+   * `asean_sustainability_transformed.csv`: The processed "Master Table" exported from SQL, specifically optimized and ready for Power BI dashboarding.
 
 ### Technical Implementation: The Master Join
 Behind the visualizations is a robust SQL transformation layer. The following script demonstrates how disparate datasets were unified into a single analytical view:
@@ -42,7 +53,7 @@ WITH calculated_metrics AS (
         -- Window Function for Year-over-Year comparison
         LAG(c.co2) OVER (PARTITION BY g.Country ORDER BY g.Year) AS prev_year_co2
     FROM asean_gdp_master g
-    INNER JOIN co2_emission c ON g.Year = c.year AND g.Country = c.country
+    INNER JOIN co2_emission_1950_2024 c ON g.Year = c.year AND g.Country = c.country
 )
 SELECT *,
     -- Decoupling Classification Logic
@@ -163,8 +174,8 @@ Based on the 74-year historical analysis of ASEAN-5, several critical patterns e
 To ensure data integrity and transparency, this project utilizes high-fidelity datasets from the following sources:
 
 * **International Monetary Fund (IMF):** Used for historical GDP (PPP), population metrics, and future economic growth projections for ASEAN-5 nations. [Source: IMF Data Mapper]
-* **Our World in Data (OWID) via Luca Lullo (Kaggle):** The primary source for national CO<sub>2</sub> emission records (1950-2024), including historical accumulation and intensity metrics.
-* **Methodology:** All economic data has been adjusted for Purchasing Power Parity (PPP) to maintain longitudinal accuracy and cross-border comparability.
+* **Our World in Data (OWID) via Luca Lullo (Kaggle):** The primary source for CO2 emission records, provided in the `co2_emission_1950_2024.csv file`.
+* **Methodology:** All data was unified via SQL in `transformation_logic.sql` and exported to `asean_sustainability_transformed.csv` for longitudinal analysis.
 
 ---
 
